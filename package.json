@@ -7,7 +7,7 @@
     "start": "vite",
     "tailwind": "tailwindcss -i ./src/themes/tailwind-config.css -o ./dist/tailwind-config-output.css --watch",
     "build": "tsc -b && vite build && tailwindcss -i ./src/themes/tailwind-config.css -o ./dist/tailwind-config-output.css && biome check .",
-    "prepare": "husky init",
+    "prepare": "husky",
     "preview": "vite preview"
   },
   "repository": {
