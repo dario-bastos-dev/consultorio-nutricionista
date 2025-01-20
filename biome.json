@@ -15,6 +15,7 @@
       "postcss.config.js",
       "tailwind.config.js",
       "biome.json",
+      "./src/themes/tailwind-config.css",
       "./src/routeTree.gen.ts"
     ]
   },
