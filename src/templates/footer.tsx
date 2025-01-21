@@ -1,43 +1,48 @@
+import { Link } from '@tanstack/react-router';
 import type React from 'react';
+import logo2 from '../assets/logo/Logo-2.png';
 
 const Footer: React.FC = () => {
   return (
     <>
-      <footer className="footer text-base-content p-10 bg-base-200">
+      <footer className="footer text-base-content p-10 bg-base-300">
         {/* Logo do consultório*/}
         <div>
-          <span className="footer-title">
-            <img src="/logo.png" alt="Logotipo do Consultório" className="h-10" />
+          <span>
+            <img src={logo2} alt="Logotipo do Consultório" className="h-16 " />
           </span>
         </div>
 
         {/* Seção de Links Rápidos */}
-        <div>
-          <span className="footer-title">Links Rápidos</span>
-          <a href="/politica-de-privacidade" className="link link-hover">
-            Política de Privacidade
-          </a>
-          <a href="/termos-de-uso" className="link link-hover">
-            Termos de Uso
-          </a>
-          <a href="/faq" className="link link-hover">
-            FAQ
-          </a>
-          <a href="/contato" className="link link-hover">
+        <div className="text-white">
+          <span className="footer-title ">Links Rápidos</span>
+          <Link to="/" className="link link-hover">
+            início
+          </Link>
+          <Link to="/services" className="link link-hover">
+            Serviços
+          </Link>
+          <Link to="/about" className="link link-hover">
+            sobre
+          </Link>
+          <Link to="/appointment" className="link link-hover">
+            Agendameto
+          </Link>
+          <Link to="/contact" className="link link-hover">
             Contato
-          </a>
+          </Link>
         </div>
 
         {/* Seção de Informações de Contato */}
-        <div>
+        <div className="text-white">
           <span className="footer-title">Contato</span>
           <p>Rua Exemplo, 123 - Bairro, Cidade - Estado, CEP</p>
-          <p>Telefone: (XX) XXXX-XXXX</p>
+          <p>Telefone: (99) 9 9999-9999</p>
           <p>E-mail: contato@consultorio.com</p>
         </div>
 
         {/* Seção de Redes Sociais */}
-        <div>
+        <div className="text-white">
           <span className="footer-title">Redes Sociais</span>
           <div className="flex gap-4">
             <a href="https://facebook.com" className="link link-hover">
@@ -54,7 +59,7 @@ const Footer: React.FC = () => {
       </footer>
 
       {/* Direitos Autorais */}
-      <footer className="footer footer-center bg-base-200 py-10 border-t-base-300 border-t-2 pt-4">
+      <footer className="footer footer-center bg-base-300 py-10 border-t-base-200 border-t-2 pt-4 text-white">
         <p>{new Date().getFullYear()}© Corpo em Ação. Todos os direitos reservados.</p>
       </footer>
     </>

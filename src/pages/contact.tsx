@@ -7,7 +7,7 @@ const Contact: React.FC = () => {
       <section className="hero-section">
         <div className="hero-content text-center">
           <div>
-            <h1 className="text-4xl font-bold">Estamos Aqui para Ajudar</h1>
+            <h1 className="text-4xl font-bold text-white">Estamos Aqui para Ajudar</h1>
           </div>
         </div>
       </section>
@@ -15,21 +15,21 @@ const Contact: React.FC = () => {
       {/* Informações de Contato */}
       <section className="py-20 bg-base-100">
         <div className="container mx-auto px-4">
-          <h2 className="section-title">Como Nos Encontrar</h2>
+          <h2 className="section-title text-primary">Como Nos Encontrar</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="card-section">
               {' '}
-              <h3 className="text-xl font-bold">Endereço</h3>
+              <h3 className="text-xl font-bold text-primary">Endereço</h3>
               <p>Rua Exemplo, 123 - Bairro, Cidade - Estado, CEP</p>
             </div>
             <div className="card-section">
               {' '}
-              <h3 className="text-xl font-bold">Telefone</h3>
+              <h3 className="text-xl font-bold text-primary">Telefone</h3>
               <p>(XX) XXXX-XXXX</p>
             </div>
             <div className="card-section">
               {' '}
-              <h3 className="text-xl font-bold">E-mail</h3>
+              <h3 className="text-xl font-bold text-primary">E-mail</h3>
               <p>contato@consultorio.com</p>
             </div>
           </div>
@@ -49,9 +49,9 @@ const Contact: React.FC = () => {
       </section>
 
       {/* Formulário de Contato */}
-      <section id="formulario" className="py-20 bg-base-200">
+      <section id="formulario" className="py-20 bg-base-300">
         <div className="container mx-auto px-4">
-          <h2 className="section-title">Envie uma Mensagem</h2>
+          <h2 className="section-title text-white">Envie uma Mensagem</h2>
           <div className="max-w-2xl mx-auto">
             <form className="card-section">
               <div className="form-control">
@@ -126,26 +126,30 @@ const Contact: React.FC = () => {
       {/* FAQ */}
       <section className="py-20 bg-base-100">
         <div className="container mx-auto px-4">
-          <h2 className="section-title">Perguntas Frequentes</h2>
+          <h2 className="section-title text-primary">Perguntas Frequentes</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="card-section">
               {' '}
-              <h3 className="text-xl font-bold">Como posso agendar uma consulta?</h3>
+              <h3 className="text-xl font-bold text-primary">Como posso agendar uma consulta?</h3>
               <p>Você pode agendar uma consulta pelo site, telefone ou pessoalmente.</p>
             </div>
             <div className="card-section">
               {' '}
-              <h3 className="text-xl font-bold">Quais são as formas de pagamento?</h3>
+              <h3 className="text-xl font-bold text-primary">Quais são as formas de pagamento?</h3>
               <p>Aceitamos cartões de crédito, débito e transferência bancária.</p>
             </div>
             <div className="card-section">
               {' '}
-              <h3 className="text-xl font-bold">Posso cancelar ou remarcar meu agendamento?</h3>
+              <h3 className="text-xl font-bold text-primary">
+                Posso cancelar ou remarcar meu agendamento?
+              </h3>
               <p>Sim, entre em contato conosco para cancelar ou remarcar.</p>
             </div>
             <div className="card-section">
               {' '}
-              <h3 className="text-xl font-bold">Os exames são cobertos por planos de saúde?</h3>
+              <h3 className="text-xl font-bold text-primary">
+                Os exames são cobertos por planos de saúde?
+              </h3>
               <p>
                 Sim, trabalhamos com a maioria dos planos de saúde. Consulte-nos para mais detalhes.
               </p>

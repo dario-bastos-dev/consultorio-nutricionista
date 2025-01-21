@@ -17,7 +17,11 @@
 
   .button {
     &.primary {
-      @apply btn btn-primary mt-4;
+      @apply btn btn-primary mt-4 uppercase;
+
+      &.btn-wide {
+        @apply text-xl btn-lg;
+      }
     }
   }
 }
