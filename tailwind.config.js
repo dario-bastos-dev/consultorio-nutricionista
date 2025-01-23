@@ -21,6 +21,9 @@ export default {
         montsserrat: ['Montserrat', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],
       },
+      backgroundImage: {
+        'hero-pattern': "url('./src/assets/img/hero-pattern.jpg')",
+      },
     },
   },
   plugins: [daisyui],

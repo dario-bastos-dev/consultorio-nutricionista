@@ -1,16 +1,17 @@
 import type React from 'react';
 import '../themes/tailwind-config.css';
 import { Link } from '@tanstack/react-router';
+import QuemSomos from '../assets/img/quem-somos.jpg';
 
 const Index: React.FC = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="hero min-h-screen bg-base-200">
-        <div className="hero-content text-center">
+      <section className="hero min-h-screen bg-hero-pattern">
+        <div className="hero-content text-center z-10">
           <div>
-            <h1 className="text-5xl font-bold text-red-50">Sua saúde em primeiro lugar!</h1>
-            <p className="py-6 text-gray-200 text-xl">
+            <h1 className="text-5xl font-bold text-white">Sua saúde em primeiro lugar!</h1>
+            <p className="py-6 text-gray-100 text-xl">
               Agende consultas online com os melhores especialistas.
             </p>
             <Link to="/appointment" className="button primary btn-wide">
@@ -25,7 +26,7 @@ const Index: React.FC = () => {
         <div className="container mx-auto px-4">
           <h2 className="section-title text-primary">Quem Somos</h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="card-section">
+            <div className="card self-center">
               <p>
                 Somos um consultório dedicado a oferecer atendimento médico de qualidade, com foco
                 no bem-estar do paciente.
@@ -35,7 +36,7 @@ const Index: React.FC = () => {
               </Link>
             </div>
             <div className="card-section">
-              <img src="/sobre-nos.jpg" alt="Sobre Nós" className="rounded-lg" />
+              <img src={QuemSomos} alt="Sobre Nós" className="rounded-lg" />
             </div>
           </div>
         </div>
@@ -49,23 +50,23 @@ const Index: React.FC = () => {
             <div className="card-section">
               <h3 className="text-xl font-bold text-primary">Consulta Online</h3>
               <p>Agende consultas com especialistas de forma rápida e segura.</p>
-              <a href="/servicos" className="button primary">
+              <Link href="/services" className="button primary">
                 Saiba Mais
-              </a>
+              </Link>
             </div>
             <div className="card-section">
               <h3 className="text-xl font-bold text-primary">Exames Laboratoriais</h3>
               <p>Realizamos exames com precisão e agilidade.</p>
-              <a href="/servicos" className="button primary">
+              <Link href="/services" className="button primary">
                 Saiba Mais
-              </a>
+              </Link>
             </div>
             <div className="card-section">
               <h3 className="text-xl font-bold text-primary">Fisioterapia</h3>
               <p>Tratamentos personalizados para recuperação e bem-estar.</p>
-              <a href="/servicos" className="button primary">
+              <Link href="/services" className="button primary">
                 Saiba Mais
-              </a>
+              </Link>
             </div>
           </div>
         </div>

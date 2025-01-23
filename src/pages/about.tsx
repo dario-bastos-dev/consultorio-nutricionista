@@ -1,5 +1,11 @@
 import type React from 'react';
 import '../themes/tailwind-config.css';
+import { Link } from '@tanstack/react-router';
+import Consultorio from '../assets/img/Consultorio.jpg';
+import DrCarlos from '../assets/img/Dr.Carlos.jpg';
+import DrJoao from '../assets/img/Dr.Joao.jpg';
+import DraMaria from '../assets/img/Dra.Maria.jpg';
+import Historia from '../assets/img/historia.jpg';
 
 const About: React.FC = () => {
   return (
@@ -18,19 +24,25 @@ const About: React.FC = () => {
         <div className="container mx-auto px-4">
           <h2 className="section-title text-primary">Nossa História</h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="card-section">
+            <div className="card p-6 self-center">
               <p>
-                Fundado em 2005, nosso consultório nasceu com a missão de oferecer atendimento
-                médico de qualidade, com foco no bem-estar do paciente. Ao longo dos anos, crescemos
-                e nos tornamos referência na região, sempre priorizando a humanização e a excelência
-                no cuidado.
+                Fundado em 2004, o consultório Corpo em Ação nasceu com a missão de oferecer
+                atendimento nutricional de excelência, focado na saúde e bem-estar de cada paciente.
+                Ao longo de mais de 20 anos, construímos uma sólida reputação na região, priorizando
+                sempre a individualidade, o acolhimento e o acompanhamento personalizado para
+                alcançar resultados efetivos e duradouros. Nossa equipe de nutricionistas
+                experientes e apaixonadas pela nutrição trabalha com dedicação para te ajudar a
+                conquistar seus objetivos, seja emagrecer, ganhar massa muscular, melhorar sua
+                performance esportiva ou simplesmente adotar um estilo de vida mais saudável. No
+                Corpo em Ação, você encontra um ambiente acolhedor e um atendimento humanizado, onde
+                cada paciente é tratado de forma única e especial.
               </p>
-              <a href="/historia" className="button primary">
-                Veja Nossa Linha do Tempo
-              </a>
+              <Link to="/appointment" className="button primary">
+                Agendar consulta
+              </Link>
             </div>
             <div className="card-section">
-              <img src="/nossa-historia.jpg" alt="Nossa História" className="rounded-lg" />
+              <img src={Historia} alt="Nossa História" className="rounded-lg" />
             </div>
           </div>
         </div>
@@ -63,19 +75,19 @@ const About: React.FC = () => {
           <h2 className="section-title text-primary">Conheça Nossa Equipe</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="card-section">
-              <img src="/dr-joao.jpg" alt="Dr. João Silva" className="rounded-lg mb-4" />
+              <img src={DrJoao} alt="Dr. João Silva" className="rounded-lg mb-4" />
               <h3 className="text-xl font-bold text-primary">Dr. João Silva</h3>
-              <p>Cardiologista com 15 anos de experiência.</p>
+              <p>Nutricionista para perda de peso.</p>
             </div>
             <div className="card-section">
-              <img src="/dra-maria.jpg" alt="Dra. Maria Souza" className="rounded-lg mb-4" />
+              <img src={DraMaria} alt="Dra. Maria Souza" className="rounded-lg mb-4" />
               <h3 className="text-xl font-bold text-primary">Dra. Maria Souza</h3>
-              <p>Pediatra especializada em cuidados infantis.</p>
+              <p>Nutricionista pediátrica.</p>
             </div>
             <div className="card-section">
-              <img src="/dr-carlos.jpg" alt="Dr. Carlos Oliveira" className="rounded-lg mb-4" />
+              <img src={DrCarlos} alt="Dr. Carlos Oliveira" className="rounded-lg mb-4" />
               <h3 className="text-xl font-bold text-primary">Dr. Carlos Oliveira</h3>
-              <p>Ortopedista com foco em tratamentos minimamente invasivos.</p>
+              <p>Nutricionista esportivo.</p>
             </div>
           </div>
           <div className="text-center mt-8">
@@ -91,7 +103,7 @@ const About: React.FC = () => {
         <div className="container mx-auto px-4">
           <h2 className="section-title text-white">Nossa Estrutura</h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="card-section">
+            <div className="card-section self-center">
               <p>
                 Nosso consultório conta com instalações modernas e equipamentos de última geração,
                 garantindo conforto e segurança para nossos pacientes. Oferecemos salas de consulta,
@@ -102,7 +114,7 @@ const About: React.FC = () => {
               </a>
             </div>
             <div className="card-section">
-              <img src="/estrutura.jpg" alt="Estrutura do Consultório" className="rounded-lg" />
+              <img src={Consultorio} alt="Estrutura do Consultório" className="rounded-lg" />
             </div>
           </div>
         </div>

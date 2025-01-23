@@ -1,3 +1,4 @@
+import { FacebookLogo, InstagramLogo, LinkedinLogo } from '@phosphor-icons/react';
 import { Link } from '@tanstack/react-router';
 import type React from 'react';
 import logo2 from '../assets/logo/Logo-2.png';
@@ -9,7 +10,9 @@ const Footer: React.FC = () => {
         {/* Logo do consultório*/}
         <div>
           <span>
-            <img src={logo2} alt="Logotipo do Consultório" className="h-16 " />
+            <Link to="/">
+              <img src={logo2} alt="Logotipo do Consultório" className="h-16 " />
+            </Link>
           </span>
         </div>
 
@@ -45,14 +48,29 @@ const Footer: React.FC = () => {
         <div className="text-white">
           <span className="footer-title">Redes Sociais</span>
           <div className="flex gap-4">
-            <a href="https://facebook.com" className="link link-hover">
-              {/*<img src="" alt="" /> Adicionar logo Facebook*/}
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              className="link link-hover"
+              rel="noreferrer"
+            >
+              <FacebookLogo size={32} weight="fill" />
             </a>
-            <a href="https://twitter.com" className="link link-hover">
-              {/*<img src="" alt="" /> Adicionar logo likedin*/}
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              className="link link-hover"
+              rel="noreferrer"
+            >
+              <LinkedinLogo size={32} weight="fill" />
             </a>
-            <a href="https://instagram.com" className="link link-hover">
-              {/*<img src="" alt="" /> Adicionar logo instagram*/}
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              className="link link-hover"
+              rel="noreferrer"
+            >
+              <InstagramLogo size={32} weight="fill" />
             </a>
           </div>
         </div>

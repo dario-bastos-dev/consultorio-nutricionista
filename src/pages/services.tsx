@@ -23,44 +23,26 @@ const Services: React.FC = () => {
             <div className="card-section">
               <h3 className="text-xl font-bold text-primary">Consulta Online</h3>
               <p>Agende consultas com especialistas de forma rápida e segura.</p>
-              <a href="/consulta-online" className="button primary">
-                Saiba Mais
-              </a>
             </div>
             <div className="card-section">
-              <h3 className="text-xl font-bold text-primary">Exames Laboratoriais</h3>
+              <h3 className="text-xl font-bold text-primary">Avaliação nutricional</h3>
               <p>Realizamos exames com precisão e agilidade.</p>
-              <a href="/exames" className="button primary">
-                Saiba Mais
-              </a>
             </div>
             <div className="card-section">
-              <h3 className="text-xl font-bold text-primary">Fisioterapia</h3>
+              <h3 className="text-xl font-bold text-primary">Reeducação alimentar</h3>
               <p>Tratamentos personalizados para recuperação e bem-estar.</p>
-              <a href="/fisioterapia" className="button primary">
-                Saiba Mais
-              </a>
             </div>
             <div className="card-section">
-              <h3 className="text-xl font-bold text-primary">Nutrição</h3>
+              <h3 className="text-xl font-bold text-primary">Orientação nutricional</h3>
               <p>Planos alimentares sob medida para suas necessidades.</p>
-              <a href="/nutricao" className="button primary">
-                Saiba Mais
-              </a>
             </div>
             <div className="card-section">
-              <h3 className="text-xl font-bold text-primary">Psicologia</h3>
+              <h3 className="text-xl font-bold text-primary">Acompanhamento nutricional</h3>
               <p>Atendimento psicológico para cuidar da sua saúde mental.</p>
-              <a href="/psicologia" className="button primary">
-                Saiba Mais
-              </a>
             </div>
             <div className="card-section">
-              <h3 className="text-xl font-bold text-primary">Odontologia</h3>
+              <h3 className="text-xl font-bold text-primary">Reeducação alimentar</h3>
               <p>Cuidados odontológicos completos para toda a família.</p>
-              <a href="/odontologia" className="button primary">
-                Saiba Mais
-              </a>
             </div>
           </div>
         </div>

@@ -1,6 +1,8 @@
 import type React from 'react';
+import useSubmitForm from '../hooks/use-submit-form';
 
 const Contact: React.FC = () => {
+  const { modalRef, handleSubmitForm } = useSubmitForm();
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
@@ -25,7 +27,7 @@ const Contact: React.FC = () => {
             <div className="card-section">
               {' '}
               <h3 className="text-xl font-bold text-primary">Telefone</h3>
-              <p>(XX) XXXX-XXXX</p>
+              <p>(99) 9 9999-9999</p>
             </div>
             <div className="card-section">
               {' '}
@@ -53,7 +55,7 @@ const Contact: React.FC = () => {
         <div className="container mx-auto px-4">
           <h2 className="section-title text-white">Envie uma Mensagem</h2>
           <div className="max-w-2xl mx-auto">
-            <form className="card-section">
+            <form className="card-section" onSubmit={handleSubmitForm}>
               <div className="form-control">
                 <label className="label" htmlFor="name">
                   <span className="label-text">Nome Completo</span>
@@ -157,6 +159,34 @@ const Contact: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* Confirmação de Agendamento */}
+      <dialog id="my_modal" className="modal" ref={modalRef}>
+        <div className="modal-box">
+          <form method="dialog">
+            <button
+              type="submit"
+              className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+            >
+              ✕
+            </button>
+
+            <div className="container mx-auto px-4">
+              <h2 className="section-title text-primary">Mensagem eviada</h2>
+              <div className="max-w-2xl mx-auto text-center">
+                <div className="card bg-base-100">
+                  <p className="text-xl">Sua mensagem foi enviada com sucesso!</p>
+                  <p className="my-4">Em breve entraremos em contato com você.</p>
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" className="btn btn-primary ml-[80%]">
+              Fechar
+            </button>
+          </form>
+        </div>
+      </dialog>
     </div>
   );
 };

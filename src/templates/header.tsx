@@ -8,7 +8,7 @@ const Header: React.FC = () => {
       <div className="max-sm:flex-col w-full">
         {/* Logotipo */}
         <div className="md:flex-1 w-full">
-          <Link href="/" className="btn btn-ghost  normal-case text-xl">
+          <Link href="/">
             <img src={logo1} alt="Logotipo do Consultório" className="h-10" />
           </Link>
         </div>
@@ -33,7 +33,7 @@ const Header: React.FC = () => {
             </li>
             <li>
               <Link to="/appointment" className="hover:text-primary">
-                Agndamento
+                Agendamento
               </Link>
             </li>
             <li>

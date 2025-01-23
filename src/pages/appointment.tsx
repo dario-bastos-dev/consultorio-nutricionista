@@ -1,16 +1,10 @@
 import type React from 'react';
 import '../themes/tailwind-config.css';
 import { Link } from '@tanstack/react-router';
-import { useRef } from 'react';
+import useSubmitForm from '../hooks/use-submit-form';
 
 const Appointment: React.FC = () => {
-  const modalRef = useRef<HTMLDialogElement>(null);
-
-  const handleSubmitForm = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-
-    modalRef.current?.showModal();
-  };
+  const { modalRef, handleSubmitForm } = useSubmitForm();
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -151,7 +145,7 @@ const Appointment: React.FC = () => {
         <div className="modal-box">
           <form method="dialog">
             <button
-              type="button"
+              type="submit"
               className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
             >
               ✕
