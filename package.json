@@ -1,9 +1,10 @@
 {
-  "name": "modelo-react",
+  "name": "corpo-em-acao",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "start": "vite ",
     "dev": "vite",
     "tailwind": "tailwindcss -i ./src/themes/tailwind-config.css -o ./dist/tailwind-config-output.css --watch",
     "build": "tsc -b && vite build && tailwindcss -i ./src/themes/tailwind-config.css -o ./dist/tailwind-config-output.css && biome check .",

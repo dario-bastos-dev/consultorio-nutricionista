@@ -16,7 +16,9 @@
       "tailwind.config.js",
       "biome.json",
       "./src/themes/tailwind-config.css",
-      "./src/routeTree.gen.ts"
+      "./src/routeTree.gen.ts",
+      "./.vscode/",
+      "./.husky/"
     ]
   },
   "linter": {

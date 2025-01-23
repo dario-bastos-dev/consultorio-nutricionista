@@ -7,7 +7,7 @@ const Index: React.FC = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="hero min-h-screen bg-hero-pattern">
+      <section className="hero min-h-screen hero-pattern">
         <div className="hero-content text-center z-10">
           <div>
             <h1 className="text-5xl font-bold text-white">Sua saúde em primeiro lugar!</h1>

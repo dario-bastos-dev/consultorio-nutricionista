@@ -27,7 +27,8 @@
 }
 
 @layer base {
-  section.bg-hero-pattern {
+  section.hero-pattern {
+    background-image: url("../assets/img/hero-pattern.jpg");
     &::before {
       content: ' ';
       display: block;
