@@ -1,6 +1,6 @@
 {
   "name": "corpo-em-acao",
-  "private": true,
+  "private": false,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
@@ -13,13 +13,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dario-bastos-dev/modelo-react.git"
+    "url": "git+https://github.com/dario-bastos-dev/consultorio-nutricionista.git"
   },
   "keywords": [],
   "author": "Dário Bastos",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dario-bastos-dev/modelo-react/issues"
+    "url": "https://github.com/dario-bastos-dev/consultorio-nutricionista/issues"
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.7",
