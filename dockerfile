@@ -17,7 +17,7 @@ COPY . .
 RUN npm run build
 
 # Etapa 2: Servir a aplicação com Nginx
-FROM nginx:alpine
+FROM nginx:alpine as runner
 
 # Remove o arquivo de configuração padrão do Nginx
 RUN rm /etc/nginx/conf.d/default.conf
